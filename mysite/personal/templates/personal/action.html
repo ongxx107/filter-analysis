@@ -1,0 +1,22 @@
+{% extends "personal/electret.html" %}
+{% load static %}
+{% block content %}
+
+	
+	{#{form}#}
+	{#{form.particleDiameter1}#}
+	<!-- <img src="data:image/png;base64,{{ figure }}"/> -->
+	<img src="data:image/png;base64,{{ figure }}" style="width:700px;height:500px;"/>
+	<br/><br/>
+	<a href="data:image/png;base64,{{ figure }}" target = "_blank">Open in new tab</a>
+	<script type="text/javascript">
+		
+	  
+	</script>
+
+{% endblock %}
+
+
+
+
+

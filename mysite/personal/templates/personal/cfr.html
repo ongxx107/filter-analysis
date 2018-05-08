@@ -1,0 +1,379 @@
+{% load static %}
+<html>
+<head>
+  <title>Filtration Software</title>
+ 
+  <link rel="stylesheet" type="text/css" href="{% static 'personal/styles/template.css'%}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'personal/styles/ui.css'%}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'personal/styles/layoutComponents.css'%}"/>
+  <link href="http://www.me.umn.edu/lib/css/reset.css" rel="stylesheet" type="text/css" media="screen" />
+  <!link href="http://www.me.umn.edu/lib/css/text.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="http://www.me.umn.edu/lib/css/template.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="http://www.me.umn.edu/lib/css/optional.css" rel="stylesheet" type="text/css" media="screen" />
+  <script type="text/javascript">
+
+  </script>
+  <style type="text/css">
+.STYLE1 {font-size: 18px}
+
+a:link {
+    text-decoration: none;
+	line-height: 150%;
+	color:black;
+}
+span{
+	color: #800000;
+}
+li{
+  margin: 10px;
+}
+
+a:visited {
+    text-decoration: default;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+h1{
+	text-decoration: underline;
+}
+
+#mainContainer{
+	padding-left: 10px;
+	padding-right: 20px;
+}
+h1 { 
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+	color: black;
+}
+
+ </style>
+</head>
+<body>
+  <div id="globalContainer" align="center">
+    <center>
+    <div id="container">
+  		<!START OF UMN HEADER>
+  	  <div class="leftprint">
+  	    <img src="http://www.me.umn.edu/assets/img/smMwdmk.gif" alt="University of Minnesota" width="216" height="55" hspace="10" align="left" />
+  	  </div>
+  	  <div class="rightprint"><strong>U of M, ME Dept: Center for Filtration Research</strong><br />http://www.me.umn.edu/<br />
+  	  </div>
+  	  <div id="header">
+  	  <!-- BEGNIN CAMPUS LINKS -->
+  	    <div id="campus_links">
+  	        <p>Campuses: </p>
+  	        <ul>
+  	          <li><a href="http://www.umn.edu">Twin Cities</a></li>
+  	          <li><a href="http://www.crk.umn.edu">Crookston</a></li>
+  	          <li><a href="http://www.d.umn.edu">Duluth</a></li>
+  	          <li><a href="http://www.morris.umn.edu">Morris</a></li>
+  	          <li><a href="http://www.r.umn.edu">Rochester</a></li>
+  	          <li><a href="http://www.umn.edu/campuses.php">Other Locations</a></li>
+  	        </ul>
+  	    </div>
+  	     <div id="headerUofM">
+        
+  	       <div id="logo_uofm">
+  	 	  </div>
+        
+  	  <!--BEGIN search div-->
+  	       <div id="search_area">
+  	         <div id="search_nav"><a href="http://onestop.umn.edu/" id="btn_onestop">OneStop</a><a href="https://www.myu.umn.edu/" id="btn_myu">myU</a>
+  	 		</div>
+         
+  	         <div class="search"> 
+  	           <form action="http://google.umn.edu/search" method="get" name="gsearch" id="gsearch" title="Search U of M Web sites">
+  	             <label for="search_field">Search U of M Web sites</label>
+  	 		  	<input type="text" id="search_field" name="q" value="Search U of M Web sites"  title="Search text"  />   
+  	 		  	<input class="search_btn" type="image" src="http://www.me.umn.edu/assets/img/search_button.gif" alt="Submit Search" value="Search" />
+  	 		  	<input name="client" value="searchumn" type="hidden" />
+  	 		  	<input name="proxystylesheet" value="searchumn" type="hidden" />
+  	 		  	<input name="output" value="xml_no_dtd" type="hidden" />
+  	 	  	  </form>  
+  	 	    </div> 
+  	         <!-- end "search" area -->
+  	 	  </div>
+  	 	  <!-- End search div -->
+  	     </div>
+  	  </div>
+    	  <a href="http://www.me.umn.edu/cfr/">
+  	  <div id="CFR home">
+    	        <img src="http://www.me.umn.edu/offices/me3101/cfr/CFR-Filter-banner.jpg" order="0" align="left" alt="Center for Filtration Research">
+    	  </div>
+        </a>
+    	  <br><br><br><br><br><br>
+    	  <div id="wrap">
+    	    <ul class="navbar">
+  			<li><a href="/personal/index/" style="color:white;font-size: 16px">Filter Analysis</a></li>
+  			<li><a href="/personal/dust%20loading/" style="color:white;font-size: 16px">Dust Loading</a></li>
+  			<li><a href="/personal/pleating%20design/" style="color:white;font-size: 16px">Pleating Design</a></li>
+  			<li><a href="/personal/electret/" style="color:white;font-size: 16px">Electret Filter</a></li>
+  			<li><a href="/personal/database/" class="activeTab"style="color:#435a26;font-size: 16px">Meeting Materials</a></li>
+  		</ul>
+    	  </div>
+	  
+  	   <!END OF UMN HEADER>
+        <div id="mainContainer">
+		  <p>* Click “Title” to download and “Author” to send an email.</p>
+		  
+		  <h1 style="color:black">53rd CFR Review Meeting (April 25, 2018)</h1>
+		  <ol>
+		    <li>
+				<a href="{% static 'personal/Database/53/01-DYH-Pui.pdf' %}">CFR Research Overview</a>
+		    	<a href="mailto:dyhpui@umn.edu"><span>(David Y.H. Pui)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/53/02-J-Wang.pdf' %}">Microbial Growth in Insulation Blankets under Simulated Environmental Conditions</a>
+		    	<a href="mailto:jing.wang@ifu.baug.ethz.ch"><span>(Jing Wang)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/53/03-SC-Kim.pdf' %}">Novel Nanofiber (NF) Filter Media for High Filtration Performance</a>
+		    	<a href="mailto:sckim@umn.edu"><span>(Seong Chan Kim)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/53/04-DYH-Pui.pdf' %}">Green Technologies for Sustainable Environment: CFR Research Review</a>
+		    	<a href="mailto:dyhpui@umn.edu"><span>(David Y.H. Pui)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/53/05-J-Wang.pdf' %}">Inter-Laboratory Validation of the Method to Determine the Filtration Efficiency
+for Airborne Particles in the 3–500 nm Range and Results Sensitivity Analysis</a>
+		    	<a href="mailto:jing.wang@ifu.baug.ethz.ch"><span>(Jing Wang)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/53/06-H-Lee.pdf' %}">Liquid Filtration: Effects of Chemical and Physical Factors on Filtration Performance
+for Micro- and Ultra-filtration Membranes – Modeling and Experiments</a>
+		    	<a href="mailto:leex7496@umn.edu"><span>(Handol Lee)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/53/07-S-Chen.pdf' %}">Designing and Optimizing Composite Filters for High Efficiency, Low Pressure Drop, and High Capacity PM<sup>2.5</sup> Filtration</a>
+		    	<a href="mailto:chens@umn.edu"><span>(Sheng-Chieh Chen)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/53/08-C-Pei.pdf' %}">Global Pollutant Database and Real-life Filter Test Rig in Laboratory</a>
+		    	<a href="mailto:peixx032@umn.edu"><span>(Chenxing Pei)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/53/09-Q-Ou.pdf' %}">Combined Effect of Aerosol Concentration and Testing Humidity on Laboratory Filter Loading Test using Sub-micrometer Hygroscopic Aerosols</a>
+		    	<a href="mailto:qou@umn.edu"><span>(Qisheng Ou)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/53/10-X-Tian.pdf' %}">Particle Loading Characteristics of Two-Stage Filtration System</a>
+		    	<a href="mailto:xtian@umn.edu"><span>(Xinjiao Tian)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/53/11-D-Kwak.pdf' %}">Evaluation of Particle Removing Efficiency using Air Jet</a>
+		    	<a href="mailto:kwak0068@umn.edu"><span>(Dongbin Kwak)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/53/12-C-Chang.pdf' %}">Effect of Catalyst Coating on Filtration Performance of Diesel Particulate Filters</a>
+		    	<a href="mailto:changc2007@126.com"><span>(Cheng Chang)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/53/13-D-Chen.pdf' %}">Inhalation-only and Inhalation-and-exhalation Testing of Filter Media</a>
+		    	<a href="mailto:dchen3@vcu.edu"><span>(Da-Ren Chen)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/53/14-M-Tang.pdf' %}">Study of Relative Humidity on Efficiency and Pressure Drop of Electret Media in the Loading Process</a>
+		    	<a href="mailto:tangm@umn.edu"><span>(Min Tang)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/53/15-D-Thompson.pdf' %}">A Web-based Electret Filter Performance Modeling and Design Tool</a>
+		    	<a href="mailto:thom3527@umn.edu"><span>(Drew Thompson)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/53/16-SK-Kang.pdf' %}">PIV Measurement and CFD Modeling of Flow Field through Pleated Filters</a>
+		    	<a href="mailto:kangx309@umn.edu"><span>(Seungkoo Kang)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/53/17-Q-Cao.pdf' %}">Numerical Investigations on Influences of Ambient and Geometric Parameters on SALSCS Performance</a>
+		    	<a href="mailto:caoxx409@umn.edu"><span>(Qingfeng Cao)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/53/18-L-Su.pdf' %}">Measurement of Particle Geometric Surface Area using a Modified Weighted Sum Method with a Time Resolution of 1s</a>
+		    	<a href="mailto:15b902011@hit.edu.cn"><span>(Lipeng Su)</span></a> 
+			</li>
+			
+	      </ol>
+		  
+		  <h1 style="color:black">52nd CFR Review Meeting (October 6, 2017)</h1>
+		  <ol>
+		    <li>
+				<a href="{% static 'personal/Database/52/04-DYH-Pui.pdf' %}">CFR Research Overview</a>
+		    	<a href="mailto:dyhpui@umn.edu"><span>(David Y.H. Pui)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/52/05-SC-Kim.pdf' %}">High Loading Filter Media using Novel Electrospinning Method</a>
+		    	<a href="mailto:sckim@umn.edu"><span>(Seong Chan Kim)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/52/06-Q-Ou.pdf' %}">Effect of Catalyst Coating on Pressure Drop and Efficiency of Ceramic Wall Substrate</a>
+		    	<a href="mailto:qou@umn.edu"><span>(Qisheng Ou)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/52/07-C-Pei.pdf' %}">Real-life Filter Loading Test Rig: Salt-Soot-Oil mixture, RH Effect, and Temperature</a>
+		    	<a href="mailto:peixx032@umn.edu"><span>(Chenxing Pei)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/52/08-LY-Liu.pdf' %}">Large Scale Industrial-Use Dust Disperser: Modeling, Evaluation</a>
+		    	<a href="mailto:liux4093@umn.edu"><span>(Luying Liu)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/52/09-SC-Kim.pdf' %}">Ultra-high Efficiency Filter Tests</a>
+		    	<a href="mailto:sckim@umn.edu"><span>(Seong Chan Kim)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/52/10-Q-Ou.pdf' %}">Clogging of Air Intake Filter Media by Mixture of Oil and Solid Dust</a>
+		    	<a href="mailto:qou@umn.edu"><span>(Qisheng Ou)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/52/11-C-Pei.pdf' %}">Effect of RH Change on Pressure Drop of Loaded Cellulose Filter Media with Hygroscopic Deposits</a>
+		    	<a href="mailto:peixx032@umn.edu"><span>(Chenxing Pei)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/52/12-SC-Chen.pdf' %}">Designing and Optimizing Composite Filters for High Efficiency, Low Pressure Drop, and High Loading Capacity</a>
+		    	<a href="mailto:chens@umn.edu"><span>(Sheng-Chieh Chen)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/52/13-HD-Lee.pdf' %}">Liquid Filtration Modeling of Fibrous Filters with Polydisperse Fibers under Unfavorable Conditions</a>
+		    	<a href="mailto:leex7496@umn.edu"><span>(Handol Lee)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/52/14-Daren-Chen.pdf' %}">A New Setup for Evaluating Filter Media under the Inhalation-and-Exhalation Condition</a>
+		    	<a href="mailto:dchen3@vcu.edu"><span>(Da-Ren Chen)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/52/14A-Daren-Chen.pdf' %}">Filtration Requirements for 3-D Printers</a>
+		    	<a href="mailto:dchen3@vcu.edu"><span>(Da-Ren Chen)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/52/15-M-Tang.pdf' %}">Comparison of Different Neutralizing Methods by IPA on Electret Filter Media</a>
+		    	<a href="mailto:tangm@umn.edu"><span>(Min Tang)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/52/16-SC-Kim.pdf' %}">Atomization of CMP Slurry and its Characterization</a>
+		    	<a href="mailto:sckim@umn.edu"><span>(Seong Chan Kim)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/52/17-SK-Kang.pdf' %}">Development of Filter Modeling with Polydispersed Fibers</a>
+		    	<a href="mailto:kangx309@umn.edu"><span>(Seungkoo Kang)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/52/18-QF-Cao.pdf' %}">PM<sup>2.5</sup> Concentration Profile around a SALSCS/AMSA: A Numerical Study under Different Ambient Conditions</a>
+		    	<a href="mailto:caoxx409@umn.edu"><span>(Qingfeng Cao)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/52/19-N-Cao.pdf' %}">Field Measurement of Nanoparticle Surface Area using the Geometric Surface Area Monitor by the Weighted Sum Method</a>
+		    	<a href="mailto:123znm@gmail.com"><span>(Nanying Cao)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/52/20-D-Thompson.pdf' %}">Web-based Modeling of Electret Filter and Nanofiber Composite: Performance and Design</a>
+		    	<a href="mailto:thom3527@umn.edu"><span>(Drew Thompson)</span></a> 
+			</li>
+			
+			
+	      </ol>
+		  <h1>51st CFR Review Meeting (May 5, 2017)</h1>
+		  <ol>
+		    <li>
+				<a href="{% static 'personal/Database/51/04_DPui.pdf' %}">CFR Research Overview</a>
+		    	<a href="mailto:dyhpui@umn.edu"><span>(David Y.H. Pui)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/51/05_QOu.pdf' %}">Performance Evaluation of Three-Way Catalyst Coated Sintered Metal Fiber Media for
+Engine After-treatment Application</a>
+		    	<a href="mailto:qou@umn.edu"><span>(Qisheng Ou)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/51/06_JWang.pdf' %}">Comparison of Catalyst Immobilization Techniques onto Filter Media for Airborne VOCs
+Decomposition</a>
+		    	<a href="mailto:jing.wang@ifu.baug.ethz.ch"><span>(Jing Wang)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/51/07_HLee.pdf' %}">Atomization of CMP Slurry and its Characterization</a>
+		    	<a href="mailto:leex7496@umn.edu"><span>(Handol Lee)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/51/08_MTang.pdf' %}">Non-IPA Production of DEHS Nanoparticles for Evaluating PTFE Filter</a>
+		    	<a href="mailto:tangm@umn.edu"><span>(Min Tang)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/51/09_SCChen.pdf' %}">Designing Composite Filters for High Efficiency, Low Pressure Drop, and High Loading
+Capacity</a>
+		    	<a href="mailto:chens@umn.edu"><span>(Sheng-Chieh Chen)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/51/10_CPei.pdf' %}">Effect of Relative Humidity Hysteresis on Loading Characteristics of Air Intake Filter Media
+by Hygroscopic Salt Particles</a>
+		    	<a href="mailto:peixx032@umn.edu"><span>(Chenxing Pei)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/51/11_QOu.pdf' %}">Clogging and Restructuring Behaviors of Solid and Oil Mixtures on Air Intake Filter Media</a>
+		    	<a href="mailto:qou@umn.edu"><span>(Qisheng Ou)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/51/12_SCChen.pdf' %}">Accurate Number Distribution Measurements for Micron and Supermicron Particles by
+Shadowgraphy Method</a>
+		    	<a href="mailto:chens@umn.edu"><span>(Sheng-Chieh Chen)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/51/13_HLee.pdf' %}">Filtration Efficiency of 1.9-30nm Nanoparticles through Eight Different Membrane Filters &
+CFD Simulation of Liquid Filtration in Different Conditions</a>
+		    	<a href="mailto:leex7496@umn.edu"><span>(Haldol Lee)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/51/14_DRChen.pdf' %}">A New Setup for Evaluating Filter Media under the Inhalation-and-Exhalation Condition</a>
+		    	<a href="mailto:dchen3@vcu.edu"><span>(Da-Ren Chen)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/51/15_DThompson.pdf' %}">Web-based Modeling of Electret Filter and Nanofiber Composite: Performance and Design</a>
+		    	<a href="mailto:thom3527@umn.edu"><span>(Drew Thompson)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/51/16_SKKang.pdf' %}">CFD Modeling of Pleated Filer Elements with the Experimental Validation using PIV</a>
+		    	<a href="mailto:kangx309@umn.edu"><span>(Seungkoo Kang)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/51/17_LCao.pdf' %}">Field Measurement of Nanoparticle Surface Area using the Geometric Surface Area Monitor
+by the Weighted Sum Method</a>
+		    	<a href="mailto:123znm@gmail.com"><span>(Nanying Cao)</span></a> 
+			</li>
+		    <li>
+				<a href="{% static 'personal/Database/51/18_QCao.pdf' %}">PM<sup>2.5</sup> Concentration Profile around a SALSCS/AMSA: A Numerical Study under Different
+Ambient Conditions</a>
+		    	<a href="mailto:caoxx409@umn.edu"><span>(Qingfeng Cao)</span></a> 
+			</li>
+			
+  	    </div>
+	</center>
+  </div>
+  <br />
+  <div id="footerContainer">
+    <div id="copyright">Copyright &copy; 2012, University of Minnesota</div>
+  	<a href="../Fil_analysis_old/index.html">Previous Version</a>
+  </div>
+  <br />
+  <div id="errorConsole" align="center">
+    <a href="javascript:void(0);" onClick="debugFlag=true; updateDebug();">Start Monitor</a>
+    -
+    <a href="javascript:void(0);" onClick="debugFlag=false;">Stop Monitor</a>
+    - 
+    <a href="javascript:void(0);" onClick="$('errorConsole').innerHTML='';">Clear Monitor</a>
+    -
+    <a href="javascript:void(0);" onClick="ErrorManager.errors=new Array(); $('errorConsole').innerHTML='';">Erase Logs</a>
+  </div>
+</body>
+
+</html>
+

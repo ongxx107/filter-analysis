@@ -1,0 +1,17 @@
+
+{%extends "personal/fit.html" %}
+{% load static %}
+{% block content %}
+
+	
+	<p>Effective surface charge density: {{effective_density}} &#181;C/m<sup style="line-height:1.5;">2</sup>&nbsp;</p>
+	<p>R<sup>2</sup> (coefficient of determination): {{R2}}</p>
+	<img src="data:image/png;base64,{{ figure }}" style="width:700px;height:500px;"/>
+	<br/><br/>
+	<a href="data:image/png;base64,{{ figure }}" target = "_blank">Open in new tab</a>
+	<script type="text/javascript">
+		
+	  
+	</script>
+
+{% endblock %}
